@@ -1,0 +1,25 @@
+.site-cookie {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0px;
+  background-color: green;
+
+  &.-accepted {
+    display: none;
+  }
+}
+
+.site-cookie__wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-cookie__content {
+  font-size: 15px;
+
+  p {
+    margin: 0;
+  }
+}

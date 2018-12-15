@@ -1,0 +1,16 @@
+---
+Name: sdots-shortcodes
+After:
+  - 'framework/*'
+  - 'cms/*'
+  - 'mysite/*'
+---
+# YAML configuration for SilverStripe
+# See http://doc.silverstripe.org/framework/en/topics/configuration
+# Caution: Indentation through two spaces, not tabs
+Director:
+  rules:
+    'shortcodes' : 'Shortcodes_Controller'
+SiteConfig:
+  extensions:
+    - ShortcodesSiteConfigExtension

@@ -1,0 +1,82 @@
+# ignore cache folder
+/silverstripe-cache/
+
+# ignore log files and databases
+*.log
+
+# ignore compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# ignore packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# ignore all environment files
+_ss_environment.php
+_ss_environment.DEV.php
+_ss_environment.LIVE.php
+
+# ignore build tools
+/tools/phing-metadata
+
+# ignore composer vendor folder
+/vendor/
+
+# ignore composer modules
+/blog/
+/externalurlfield/
+/gridfieldextensions/
+/googlesitemaps/
+/lumberjack/
+/metatitle/
+/segment-field/
+/sortablefile/
+/tagfield/
+/userforms/
+
+# 7dots specific
+
+
+# IDE, temp files
+_notes
+._*.*
+/dbg/
+.project
+*.cpf
+*.cpfs
+*.DS_Store
+*.idea
+
+# cache, log, assets
+_compareTemp
+/assets/*
+/log/*
+/silverstripe-cache/*
+twitter/_cache/*
+/_7dots/
+/7dots/*
+*/.sass-cache/*
+
+# node and dist
+**/node_modules/*
+**/dist
+**/dist/*
+
+# root for SS Air only - to ensure up to date versions
+# remove these on a specific project
+/cms/
+/framework/
+/reports/
+/siteconfig/
+/themes/simple/

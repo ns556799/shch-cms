@@ -1,0 +1,9 @@
+.status-addedtodraft > a .item {
+	color:#e95623 !important;
+	font-style:italic !important;	
+}
+
+.status-modified > a .item {
+	color:#5e5e5e !important;
+	font-style:italic !important;	
+}

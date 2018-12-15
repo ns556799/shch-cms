@@ -1,0 +1,27 @@
+---
+Name: mysite
+After:
+  - 'framework/*'
+  - 'cms/*'
+---
+# YAML configuration for SilverStripe
+# See http://doc.silverstripe.org/framework/en/topics/configuration
+# Caution: Indentation through two spaces, not tabs
+SSViewer:
+  theme: 'base'
+Debug:
+  friendly_error_httpcode: true  
+BetterNavigator:
+  developers:
+  - 'webmaster@7dots.co.uk'
+LeftAndMain:
+  extra_requirements_javascript:
+    mysite/javascript/cms.js:
+  extra_requirements_css:
+    mysite/css/cms.css:
+      media: screen
+HtmlEditorField:
+  insert_width:
+    1000
+Email:
+  admin_email: 7dots<no-reply@7dots.co.uk>
