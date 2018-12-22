@@ -51,29 +51,4 @@ class LocationBlock extends Block
 		return $this->BlockHTML();
 	}
 
-
-	public function getLatLng() {
-		$address = $this->Location;
-		$prepAddr = str_replace(' ','+',$address);
-		$geocode=file_get_contents('https://maps.google.com/maps/api/geocode/json?address='.$prepAddr.'&sensor=false&key=AIzaSyAqAX7TaZ9s7IVcGTnECon0K7ycqSSWYyU');
-		$output= json_decode($geocode);
-
-		if($output->results[0]) {
-
-			$latitude = $output->results[0]->geometry->location->lat;
-			$long = $output->results[0]->geometry->location->lng;
-
-			$coords = array();
-			$coords['lat'] = $latitude;
-			$coords['lng'] = $long;
-
-			$map = new SSViewer('MapTemplate');
-
-			return $map->process(new ArrayData($coords));
-		} else {
-			return 'Address incorrect';
-		}
-	}
-
-
 }
