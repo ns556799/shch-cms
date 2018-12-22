@@ -3,6 +3,9 @@
 		<div class="footer__copy">
 			<p>&copy; $Now.Format(Y) $SiteConfig.Title</p>
 		</div>
+
+    $SiteConfig.AdminEmail
+    $SiteConfig.AdminPhone
+
 	</div>
 </footer>
-<!-- $debug7dots -->

@@ -1,0 +1,58 @@
+.tabItems {
+  display: flex;
+  padding: 30px 0;
+}
+
+.tabItem__container{
+  @include mq($m) {
+    max-width: 15%;
+    flex-basis: 15%;
+  }
+
+}
+
+.tabItem__title{
+  text-align: center;
+  cursor: pointer;
+
+  &:after{
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+  }
+  &.-first {
+    position: relative;
+    &:after{
+      content: '';
+      width: 50%;
+      height: 2px;
+      background-color: red;
+      bottom: 0;
+      right: 50%;
+      position: absolute;
+      transform: translate(50%, 50%);
+      opacity: 1;
+      transition: opacity 0.5s ease-in;
+    }
+  }
+}
+
+.tabContent__container{
+  position: relative;
+  width: 100%;
+
+  @include mq($m) {
+    max-width: 80%;
+    flex-basis: 80%;
+  }
+}
+
+.tabItem__content{
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+  &.-first{
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+  }
+}

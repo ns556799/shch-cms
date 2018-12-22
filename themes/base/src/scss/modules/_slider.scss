@@ -1,0 +1,19 @@
+.banner-container{
+  .swiper-container{}
+
+  .swiper-wrapper{}
+
+  .swiper-slide{}
+
+  .banner-slide{
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &:after {
+      content: '';
+      display: block;
+      padding-bottom: 35%;
+    }
+  }
+}

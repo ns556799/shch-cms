@@ -3,13 +3,17 @@
      
     static $db = array(
         "AdminEmail" => "Text",
+        "AdminPhone" => "Text",
+        "AdminAddress" => "HTMLText",
     );
 	
 	static $has_one = array(
     );
  
     public function updateCMSFields(FieldList $fields) {
-		$fields->addFieldToTab("Root.Main", new TextField('AdminEmail','Admin email'));
+		$fields->addFieldToTab("Root.Contact", new TextField('AdminEmail','Admin email'));
+		$fields->addFieldToTab("Root.Contact", new TextField('AdminPhone','Admin Phone'));
+		$fields->addFieldToTab("Root.Contact", new TextareaField('AdminAddress','Admin Address'));
     }
 	
 	static $custom_create_default_pages = true;

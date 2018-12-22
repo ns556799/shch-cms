@@ -9,6 +9,7 @@
 @import "core/vars";
 @import "core/functions";
 @import "core/mixins";
+@import "core/gridy";
 
 
 
@@ -40,7 +41,7 @@
 // =scripts
 // ====================================================================
 
-//@import "scripts/magnificpopup"; /* usage example */
+@import "scripts/swiper";
 //@import "scripts/slick"; /* usage example */
 
 
@@ -50,9 +51,10 @@
 // ====================================================================
 
 //@import "modules/breadcrumbs"; /* usage example */
-@import "modules/cookie"; /* usage example */
-
-
+@import "modules/cookie";
+@import "modules/slider";
+@import "modules/panel";
+@import "modules/tabs";
 
 // ====================================================================
 // =layout

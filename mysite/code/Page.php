@@ -100,6 +100,24 @@ class Page extends SiteTree
 		return $fields;
 	}
 
+
+	public static function gridConfig()
+	{
+		$gfColumns = new GridFieldDataColumns();
+		$gfConfig = GridFieldConfig::create()->addComponents(
+			new GridFieldToolbarHeader(),
+			new GridFieldAddNewButton('toolbar-header-right'),
+			new GridFieldSortableRows('SortOrder'),
+			new GridFieldSortableHeader(),
+			$gfColumns, //new GridFieldDataColumns(),
+			new GridFieldPaginator(10),
+			new GridFieldEditButton(),
+			new GridFieldDeleteAction(),
+			new GridFieldDetailForm()
+		);
+		return $gfConfig;
+	}
+
 	//return either the whole site config or an individual field
 	public function getSiteConfig($field = "")
 	{

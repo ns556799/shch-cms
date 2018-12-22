@@ -17,11 +17,19 @@ if (document.querySelector('body').classList.contains('-debug')) {
 
 // =modules
 
+if (document.querySelector('.js-banner')) {
+  import(/* webpackChunkName: "banner" */ 'module/banner')
+}
+
 setTimeout(() => {
-  if (document.querySelector('.site-cookie.js-site-cookie')) {
+  if (document.querySelector('.js-site-cookie')) {
     import(/* webpackChunkName: "cookie" */ 'module/cookie')
   }
 }, 1000)
+
+if (document.querySelector('.js-tabs')) {
+  import(/* webpackChunkName: "tabs" */ 'module/tabs')
+}
 
 // =blocks
 // if (document.querySelector('.m-blockname')) {

@@ -1,7 +1,42 @@
 .header {
 	padding: 30px 0;
-	background: $grey-dark;
+	background: $white;
 }
+
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container__title{
+  font-family: $font-lob;
+  color: #bbcbd7;
+  font-size: 20px;
+}
+
+.logo-container__img{
+  width: 0;
+  height: 0;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+  border-bottom: 30px solid darkblue;
+  position: relative;
+
+  &:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 69px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 28px solid white;
+    right: -70px;
+    top: 1px;
+  }
+}
+
 	.header__logo {
 		color: $white;
 		font-size: 22px;
@@ -13,3 +48,10 @@
 			color: $grey-light;
 		}
 	}
+
+  .logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
