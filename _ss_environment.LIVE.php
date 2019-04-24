@@ -5,15 +5,15 @@
 // http://doc.silverstripe.org/framework/en/topics/environment-management
 
 
-define('SS_ENVIRONMENT_TYPE', 'dev'); //dev/test/live
+define('SS_ENVIRONMENT_TYPE', 'live'); //dev/test/live
  
 /* Database connection */
 
 define('SS_DATABASE_CLASS', 'MySQLDatabase');
-define('SS_DATABASE_SERVER', 'localhost');
-define('SS_DATABASE_NAME', 'SS_mysite1');
-define('SS_DATABASE_USERNAME', 'shch-admin');
-define('SS_DATABASE_PASSWORD', '556799');
+define('SS_DATABASE_SERVER', '46.32.240.39');
+define('SS_DATABASE_NAME', 'x--sa-obok9r-u-212808');
+define('SS_DATABASE_USERNAME', 'shch-a36-u-218262');
+define('SS_DATABASE_PASSWORD', 'm9gJz8e2mEA5K-J');
 
 /* Configure a default username and password to access the CMS on all sites in this environment. */
 define('SS_DEFAULT_ADMIN_USERNAME', 'webmaster@7dots.co.uk');

@@ -12,7 +12,7 @@ $debug-mode: true;
 
 $white: #ffffff;
 $black: #000000;
-$blue: #477dca;
+$blue: #4f7391;
 $grey-dark: #333;
 $grey-medium: #999;
 $grey-light: #ddd;
@@ -35,10 +35,11 @@ $icon-phone: \f095;
 $icon-at: \f1fa;
 
 // typography
-$base-font-family: $font-stack-system;
-$heading-font-family: $base-font-family;
-$font-lob: 'Lobster Two', cursive;
 
+$font-lob: 'Lobster Two', cursive;
+$font-rale: 'Raleway', sans-serif;;
+$base-font-family: $font-rale;
+$heading-font-family: $base-font-family;
 // font colors
 $base-font-color: $grey-dark;
 $action-color: $blue;
