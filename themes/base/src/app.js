@@ -25,10 +25,16 @@ setTimeout(() => {
   if (document.querySelector('.js-site-cookie')) {
     import(/* webpackChunkName: "cookie" */ 'module/cookie')
   }
+  if (document.querySelector('.js-map-container')) {
+    import(/* webpackChunkName: "cookie" */ 'module/map')
+  }
 }, 1000)
 
 if (document.querySelector('.js-tabs')) {
   import(/* webpackChunkName: "tabs" */ 'module/tabs')
+}
+if (document.querySelector('.js-navigation-menu')) {
+  import(/* webpackChunkName: "tabs" */ 'module/menu')
 }
 
 // =blocks

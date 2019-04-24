@@ -34,3 +34,5 @@ $ExtraMeta
 <meta name="twitter:description" content="$OGDescription">
 
 <link href="$ThemeDir/dist/main-bundle.css?v={$AssetsVersion}" rel="stylesheet">
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXOVH2ZWCeWjVHaBNQ9-1dvgOhROe-lok"
+        type="text/javascript"></script>

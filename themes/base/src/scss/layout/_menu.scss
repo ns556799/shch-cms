@@ -1,18 +1,121 @@
 .nav-mains {
-	@include mq($sl) {
-		float: right;
-	}
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
 }
-	.nav-main {
 
-	}
-		.nav-main__item {
-			display: inline-block;
-			margin: 0 10px 0 0;
-		}
-			.nav-main__link {
-				color: $grey-light;
-				&:hover {
-					color: darken($grey-light, 30%);
-				}
-			}
+.nav-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  opacity: 0;
+  transition: .1s;
+
+  .-menu-open & {
+    opacity: 1;
+    transition: .5s;
+  }
+}
+
+.nav-main__item {
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+
+.nav-main__link {
+  color: $blue;
+  font-weight: bold;
+  font-size: 20px;
+  &:hover {
+    color: darken($blue, 30%);
+  }
+}
+
+/* menuFive */
+.menuFive {
+  width: 35px;
+  height: 30px;
+  margin: 10px 10px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  z-index: 20;
+}
+
+.menuFive span {
+  background-color: white;
+  position: absolute;
+  border-radius: 2px;
+  transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+  width: 100%;
+  height: 4px;
+  transition-duration: 500ms
+}
+
+.menuFive span:nth-child(1) {
+  top: 0px;
+  left: 0px;
+}
+
+.menuFive span:nth-child(2) {
+  top: 13px;
+  left: 0px;
+}
+
+.menuFive span:nth-child(3) {
+  bottom: 0px;
+  left: 0px;
+}
+
+@include mq($l) {
+  .menuFive:not(.clickMenuFive):hover span:nth-child(1) {
+    transform: rotate(-3deg) scaleY(1.1);
+  }
+
+  .menuFive:not(.clickMenuFive):hover span:nth-child(2) {
+    transform: rotate(3deg) scaleY(1.1);
+  }
+
+  .menuFive:not(.clickMenuFive):hover span:nth-child(3) {
+    transform: rotate(-4deg) scaleY(1.1);
+  }
+}
+
+.clickMenuFive span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 13px;
+
+}
+
+.clickMenuFive span:nth-child(2) {
+  transform: scale(.1);
+
+}
+
+.clickMenuFive span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 13px;
+}
+
+.navigation-drawer {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #b9c6d0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  .-menu-open & {
+    width: 300px;
+  }
+}
