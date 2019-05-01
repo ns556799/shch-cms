@@ -5,7 +5,7 @@ class TeamMember extends DataObject {
         "Title" => "Text",
         "Content" => "HTMLText",
         "SortOrder" => "Int",
-        "Content" => "HTMLText",
+        "Position" => "Text",
     );
 
     static $has_one = array(
@@ -24,6 +24,7 @@ class TeamMember extends DataObject {
 
         $fields->addFieldToTab('Root.Main', new TextField('Title'));
         $fields->addFieldToTab('Root.Main', new HtmlEditorField('Content'));
+        $fields->addFieldToTab('Root.Main', new TextField('Position'));
         $fields->addFieldToTab('Root.Main', new UploadField('MainImage'));
 
         return $fields;

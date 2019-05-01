@@ -14,6 +14,7 @@ class TeamPage extends Page {
 	);
 
 	private static $has_one = array(
+		"MainImage" => 'Image'
 
 	);
 
@@ -35,7 +36,7 @@ class TeamPage extends Page {
 		$fields = parent::getCMSFields();
 
 		$fields->removeByName(['Banners', 'OtherImages']);
-
+		$fields->addFieldToTab('Root.HeroBanner', new UploadField('MainImage', 'Hero Banner'));
 		$fields->addFieldToTab('Root.TeamMembers', new GridField("TeamMembers", "Team Members:", $this->TeamMembers(), Page::gridConfig()));
 
 		return $fields;

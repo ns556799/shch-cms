@@ -34,7 +34,10 @@ if (document.querySelector('.js-tabs')) {
   import(/* webpackChunkName: "tabs" */ 'module/tabs')
 }
 if (document.querySelector('.js-navigation-menu')) {
-  import(/* webpackChunkName: "tabs" */ 'module/menu')
+  import(/* webpackChunkName: "nav" */ 'module/menu')
+}
+if (document.querySelector('.js-team-member')) {
+  import(/* webpackChunkName: "team" */ 'module/team')
 }
 
 // =blocks
