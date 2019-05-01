@@ -14,17 +14,7 @@
   <div gy="g">
     <div gy="c">
       <div class="homepage-copy">
-        <p>
-          Sussex House Care Home prides itself on quality person-centred care. We focus on promoting independence
-          through
-          a range of support services for those who have mental health difficulties as well as a combination of mental
-          health and other needs such as physical disabilities or recovery from alcohol/substance misuse. 
-        </p>
-        <p> An holistic approach is adopted and is directed to the physical, mental, emotional, social, cultural and
-          spiritual needs. </p>
-        <p>
-          Our home is situated in a a short walk from the seaside in Cleethorpes.
-        </p>
+        $Content
       </div>
     </div>
   </div>
