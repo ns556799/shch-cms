@@ -16,7 +16,7 @@
   }
 }
 
-.team-container__wrapper{
+.team-container__wrapper {
   padding: 15px;
 
   @include mq($m) {
@@ -31,6 +31,13 @@
     @include mq($m) {
       padding: initial;
     }
+  }
+}
+
+.team-member__wrapper {
+  margin-bottom: 25px;
+  @include mq($m) {
+    margin-bottom: 50px;
   }
 }
 
@@ -65,7 +72,7 @@
   }
 }
 
-.tingle-modal-box__content{
+.tingle-modal-box__content {
   padding: 2rem 2rem;
 }
 

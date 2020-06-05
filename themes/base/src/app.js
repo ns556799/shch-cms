@@ -39,6 +39,12 @@ if (document.querySelector('.js-navigation-menu')) {
 if (document.querySelector('.js-team-member')) {
   import(/* webpackChunkName: "team" */ 'module/team')
 }
+if (document.querySelector('.js-about-gallery')) {
+  import(/* webpackChunkName: "team" */ 'module/gallery')
+}
+if (document.querySelector('.js-facilities-slider')) {
+  import(/* webpackChunkName: "team" */ 'module/fc-slider')
+}
 
 // =blocks
 // if (document.querySelector('.m-blockname')) {

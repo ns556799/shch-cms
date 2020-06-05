@@ -1,0 +1,36 @@
+.about-container {
+}
+
+.about-title {
+  padding: 15px 0;
+}
+
+.about-gallery {
+  margin-bottom: 25px;
+}
+
+.about-gallery__item {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  &:after {
+    content: '';
+    display: block;
+    padding-bottom: 40%;
+  }
+}
+
+.about-content__one {
+}
+
+.about-content__two {
+}
+
+.about-services {
+  padding: 15px 0;
+}
+
+.about-service__title {
+  font-weight: bold;
+}

@@ -7,8 +7,9 @@ bannerContainers.forEach((bannerContainer) => {
 
   const swiper = new Swiper(swiperContainer, {
     autoplay: {
-      delay: 3000,
+      delay: 2000,
     },
-    loop: true
+    loop: true,
+    effect: 'coverflow'
   })
 })

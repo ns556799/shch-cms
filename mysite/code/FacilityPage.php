@@ -18,7 +18,10 @@ class FacilityPage extends Page {
 	);
 
 	private static $has_many = array(
-		"FacilityItems" => "FacilityItem"
+		"FacilityItems" => "FacilityItem",
+	);
+	private static $many_many = array(
+		"FacilityImages" => "Image"
 	);
 
 	//must include this function to override default on Page class
@@ -37,6 +40,7 @@ class FacilityPage extends Page {
 		$fields->removeByName(['Banners', 'OtherImages']);
 
 		$fields->addFieldToTab('Root.Items', new GridField("FacilityItems", "Facility Items:", $this->FacilityItems(), Page::gridConfig()));
+		$fields->addFieldToTab('Root.Images', new UploadField("FacilityImages", "Images"));
 
 		return $fields;
 	}

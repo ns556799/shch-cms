@@ -6,7 +6,7 @@
 
 
 define('SS_ENVIRONMENT_TYPE', 'dev'); //dev/test/live
- 
+
 /* Database connection */
 
 define('SS_DATABASE_CLASS', 'MySQLDatabase');

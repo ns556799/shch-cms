@@ -26,9 +26,11 @@ h1 {
 }
 h2 {
 	font-size: $h2-font-size;
+  text-decoration: underline;
 }
 h3 {
 	font-size: $h3-font-size;
+  text-decoration: underline;
 }
 h4 {
 	font-size: $h4-font-size;
@@ -78,4 +80,8 @@ hr {
 		padding-left: $base-spacing;
 		list-style-type: decimal;
 	}
+}
+
+.facilities__title {
+  margin: 15px 0;
 }

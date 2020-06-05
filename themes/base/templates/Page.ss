@@ -6,7 +6,9 @@
 <body class="ss-$ClassName.LowerCase<% if $isDebugMode %> -debug<% end_if %>">
 	<% include Header %>
 	$Layout
-	<% include Footer %>
+  <% include HomePanels %>
+
+  <% include Footer %>
 	<% include Scripts %>
 $renderCookie
 </body>

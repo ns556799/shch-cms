@@ -1,6 +1,8 @@
 .panel-items {
   padding: 30px 0;
   cursor: pointer;
+  justify-content: center;
+  align-items: center;
 }
 
 .panel-item {
@@ -17,6 +19,9 @@
 }
 
 .panel-item__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 15px 10px;
   img {
     max-height: 100px;
